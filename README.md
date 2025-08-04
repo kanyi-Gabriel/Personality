@@ -68,7 +68,7 @@ The dataset is stored in a CSV file and contains the following columns:
 
 ## 📈 Results from visuaization File
 
-#### Countplot
+## 📊 Countplot: Distribution of Personality
 
 ** Class Imbalance:**
 
@@ -78,7 +78,47 @@ The dataset is stored in a CSV file and contains the following columns:
 
 - Introverts: Approximately 4,500 samples.
 
-- This imbalance could impact model performance, especially if the model tends to predict the majority class more frequently
+- This imbalance could impact model performance, especially if the model tends to predict the majority class more frequently and need to be taken into account when creating the model
+
+  ** Model Implementation Phase**
+  
+  *Handling imbalance* - Apply Synthetic Minority Over-sampling Technique(SMOTE) or Random Undersampling to balance the classes.
+
+The countplot reveals a significant imbalance in the dataset, with Extroverts outnumbering Introverts by a ratio of approximately 3:1. This imbalance wil be addressed in machine learning phase of creating predictive model
+
+---
+
+## 📊 Boxplot Analysis: Identifying Outliers
+
+**Key Observations:**
+
+`Extroverts:`The data is relatively consistent, with no noticeable outliers.
+
+`Introverts: `There are a few notable outliers, which need to be addressed
+
+### 🚨 Handling Outliers
+
+#### Identification of boundaries
+
+Statistical Methods: Used the Interquartile Range (IQR) method to identify outliers programmatically:
+`IQR `= Q3 - Q1
+
+`Lower Bound `= Q1 - 1.5 * IQR
+
+`Upper Bound` = Q3 + 1.5 * IQR
+
+Any value below the lower bound or above the upper bound is considered an outlier and will be neglected
+
+
+---
+
+## 📊 Data Visualization: Exploring Personality Traits
+
+**Conclusions and Insight**
+
+    - Stage fear is more prevalent among Introverts, which aligns with common psychological observations that Introverts may feel more anxious in public or performance situations.
+    - The stark contrast between the two groups indicates that Stage_fear could be a strong predictor for distinguishing between Extroverts and Introverts.
+    - This visualization reinforces the idea that Introverts tend to recharge by spending time alone, whereas Extroverts gain energy from social interactions.
 
 ---
 
