@@ -66,11 +66,19 @@ The dataset is stored in a CSV file and contains the following columns:
 
 ---
 
-## 📈 Results
+## 📈 Results from visuaization File
 
-- Achieved high accuracy on test data
-- Demonstrated the effectiveness of behavioral features in personality classification
-- Visualized feature correlations to understand influence on personality type
+#### Countplot
+
+** Class Imbalance:**
+
+- The dataset is imbalanced, with a significantly higher number of Extroverts compared to Introverts.
+
+- Extroverts: Approximately 13,000 samples.
+
+- Introverts: Approximately 4,500 samples.
+
+- This imbalance could impact model performance, especially if the model tends to predict the majority class more frequently
 
 ---
 
