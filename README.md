@@ -70,7 +70,7 @@ The dataset is stored in a CSV file and contains the following columns:
 
 ## 📊 Countplot: Distribution of Personality
 
-** Class Imbalance:**
+**Class Imbalance:**
 
 - The dataset is imbalanced, with a significantly higher number of Extroverts compared to Introverts.
 
@@ -80,7 +80,7 @@ The dataset is stored in a CSV file and contains the following columns:
 
 - This imbalance could impact model performance, especially if the model tends to predict the majority class more frequently and need to be taken into account when creating the model
 
-  ** Model Implementation Phase**
+  **Model Implementation Phase**
   
   *Handling imbalance* - Apply Synthetic Minority Over-sampling Technique(SMOTE) or Random Undersampling to balance the classes.
 
@@ -100,7 +100,8 @@ The countplot reveals a significant imbalance in the dataset, with Extroverts ou
 
 #### Identification of boundaries
 
-Statistical Methods: Used the Interquartile Range (IQR) method to identify outliers programmatically:
+Used the Interquartile Range (IQR) method to identify outliers programmatically:
+
 `IQR `= Q3 - Q1
 
 `Lower Bound `= Q1 - 1.5 * IQR
